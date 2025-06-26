@@ -17,7 +17,6 @@ An end-to-end Machine Learning pipeline for detecting network intrusions using r
 -  **Machine Learning**: Scikit-learn (Random Forest, KNN, Logistic Regression, Gradient Boosting, AdaBoost)
 -  **Data Preprocessing**: KNNImputer, SMOTE (oversampling), Feature Pipelines
 -  **Experiment Tracking**: MLflow with [DagsHub Integration](https://dagshub.com)
--  **Data Version Control**: DVC
 -  **Model Serving**: FastAPI (with HTML predictions)
 -  **Drift Monitoring**: KS Test
 
