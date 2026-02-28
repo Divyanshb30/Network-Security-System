@@ -40,10 +40,9 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
         
     def track_mlflow(self,best_model,classificationmetric):
-        import dagshub
-        dagshub.init(repo_owner='Divyanshb30', 
-                 repo_name='Network-Security-System', 
-                 mlflow=True)
+        import os
+        mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI"))
+        mlflow.set_experiment("NetworkSecurity")
        
         with mlflow.start_run():
             f1_score=classificationmetric.f1_score
