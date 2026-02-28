@@ -194,4 +194,9 @@ cython_debug/
 .cursorindexingignore
 Artifacts/
 final_model/
+Network_Data/
+mlruns/
+prediction_output/
+valid_data/
 *.npy
+*.csv
