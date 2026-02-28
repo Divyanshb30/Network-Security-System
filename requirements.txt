@@ -14,7 +14,8 @@ python-multipart
 
 # Monitoring + explainability dashboard
 scipy
-streamlit
+streamlit==1.40.0
+altair==4.2.2
 shap
 matplotlib
 
